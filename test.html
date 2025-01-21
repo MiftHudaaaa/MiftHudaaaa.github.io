@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+    <meta charset="UTF-8">
+    <title>Bajindul Store</title>
+    <style>
+        body {
+            background-color: #212121;
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        
+        .judul {
+            font-size: 3.5em;
+            color: #F58E15;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+        
+        .subjudul {
+            font-size: 1.8em; 
+            color: #B9B9B9;
+            text-align: center;
+            margin-top: 0px;
+        }
+        
+        table {
+           width: 100%;
+           border-collapse: collapse;
+           margin-top: 20px;
+        }
+        
+        th, td {
+           border: 1px solid #B9B9B9;
+           color: white;
+           padding-left: 10px;
+           padding-right: 10px;
+           padding-top: 20px;
+           padding-bottom: 20px;
+        }
+        
+        th {
+            background-color: #8D4600;
+            font-size: 1.8em;
+        }
+        
+        td {
+            font-size: 1.5em;
+        }
+        
+        button {
+            padding: 5px 10px;
+            border: none;                        
+            background-color: #D56A00;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-left: 12px;
+            font-weight: bold;
+        }
+        
+        button:hover {
+            background-color: #8F4700;
+        }
+
+        input[type="text"] {
+            width: 97.6%;
+            padding: 10px;
+            margin-top: 50px;
+            border: 1px solid #B9B9B9;
+            border-radius: 4px;
+            font-size: 1.7em;
+            color: white;
+            background-color: #393939;
+        }
+
+        input[type="text"]::placeholder {
+            color: #B9B9B9;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="judul">ASSETS TEXTURE KD BUSSID</div>
+    <div class="subjudul">Website By Bajindul Store</div>
+
+    <!-- Menu Pencarian -->
+    <input type="text" id="searchInput" placeholder="Cari Nama Assets..." onkeyup="searchTable()" onkeydown="handleEnter(event)">
+
+    <table id="tabledata">
+        <thead>
+            <tr>
+               <th>No.</th>
+               <th>Assets</th>
+               <th>Nama Assets</th>
+               <th>Salin</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>03daafb2d5aaca1458c72b1da8c1541e</td>
+                <td>Driver 1 (Bayu)</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>5eb292f64ab6a224ebd504c5147c2aa1</td>
+                <td>Driver 2 (Mulyono)</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>60239bdee3a28a441bb4b424a007fdd7</td>
+                <td>Driver 3 (Gilang)</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>9bf619330c13dbf428234bd7b255a9c0</td>
+                <td>Driver 4 (Annisa)</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>07a99bd21ab6bb14289c0cf889817e4a</td>
+                <td>HL SHD OFF</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>78c5e434dd95db04dbeff02f06a93ddd</td>
+                <td>HL SHD ON</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>605ecdf518369684fbb07c4b9be5e494</td>
+                <td>HL JBHD OFF</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>98eb99f87145162469ec185dd3b330e6</td>
+                <td>HL JBHD ON</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>ad45598b14cb1f64f9ab7b5ea4e49776</td>
+                <td>HL XHD OFF</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>10</td>
+                <td>caf1cc522ac43284ba01b571c5beb99e</td>
+                <td>HL XHD ON</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>11</td>
+                <td>be4f3daa7b2f6e041a7aa3b36d606de7</td>
+                <td>HL Srikandi OFF</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>12</td>
+                <td>e3b4aa1d2fe1d5c4ebca9c994f3e785b</td>
+                <td>HL Srikandi ON</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>13</td>
+                <td>belum ketemu wir</td>
+                <td>HL Bimasena OFF</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>14</td>
+                <td>yang tau nama aset ini inbok</td>
+                <td>HL Bimasena ON</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>15</td>
+                <td>95ce6dccaaa30af4db24bcf29f9111bf</td>
+                <td>Strobo</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>16</td>
+                <td>5369834e61a16ca48b72ca15d1e306f0</td>
+                <td>Loading Screen</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>17</td>
+                <td>47ef8bf13c913494da679eaf2413916f</td>
+                <td>Runtex (Acc 1)</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>18</td>
+                <td>737ace7a644c16049a090d80e78f276a</td>
+                <td>Kepet Belakang (Acc 2)</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>19</td>
+                <td>8975f79bb0a6382439bfd2b06b01cc54</td>
+                <td>Velg (Acc 3)</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>20</td>
+                <td>bfad7a498838b94429c38e146d66dd23</td>
+                <td>Sein (Acc 5)</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+            <tr>
+                <td>21</td>
+                <td>f2760b1048689b54aaf9a1612112d64d</td>
+                <td>Sein (Acc 5 Glow)</td>
+                <td><button onclick="copyRow(this)">Salin</button></td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <script>
+        function copyRow(button) {
+            // Ambil baris tempat tombol berada
+            const row = button.parentElement.parentElement;
+            
+            // Ambil teks dari kolom kedua (Assets)
+            const assetCode = row.querySelectorAll('td')[1].textContent;
+            
+            // Salin teks ke clipboard
+            navigator.clipboard.writeText(assetCode).then(() => {
+                alert('Assets Berhasil Disalin: ' + assetCode);
+            }).catch(err => {
+                console.error('Gagal menyalin kode', err);
+            });
+        }
+
+        function searchTable() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const table = document.getElementById('tabledata');
+            const rows = table.getElementsByTagName('tr');
+            
+            for (let i = 1; i < rows.length; i++) {
+                const cells = rows[i].getElementsByTagName('td');
+                let match = false;
+
+                for (let j = 0; j < cells.length; j++) {
+                    if (cells[j].textContent.toLowerCase().includes(filter)) {
+                        match = true;
+                        break;
+                    }
+                }
+
+                rows[i].style.display = match ? '' : 'none';
+            }
+        }
+
+        function handleEnter(event) {
+            if (event.key === "Enter") {
+                event.preventDefault(); // Mencegah aksi default (seperti mengirim form)
+                document.getElementById('searchInput').blur(); // Menghilangkan fokus dari input
+            }
+        }
+    </script>
+</body>
+</html>
